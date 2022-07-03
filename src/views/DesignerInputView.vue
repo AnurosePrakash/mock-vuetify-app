@@ -1,20 +1,18 @@
 <template>
     <div>
-      <designer-input-appbar-start /> 
+      <designer-input-appbar /> 
     <div>
     <v-container class="pa-0" fluid>
- 
+      
     <v-layout row wrap class="pa-0" style="height:100vh">
-      <v-flex style="height:100%">    
+    
+      <v-flex>   
         
         <designer-input-sidebar />
       </v-flex >
-      <v-flex class="px-9" style="width:100%" justify-center >
-       
-        
-        <h1>WELCOME TO SOVITY</h1>
-        <p class="text-caption"> Navigate to Data Offers for further information</p> 
-
+      <v-flex style="width:100%" >
+        <!-- artwork here -->        
+        <designer-input-form-wizard-tab />
       </v-flex>
     </v-layout>
     
@@ -27,14 +25,14 @@
 <script>
 
 import DesignerInputSidebar from '@/components/DesignerInputForm/DesignerInputSidebar/DesignerInputSidebar.vue';
-import DesignerInputAppbarStart from "@/components/DesignerInputForm/DesignerInputAppbar/DesignerInputAppbarStart.vue";
+import DesignerInputAppbar from "@/components/DesignerInputForm/DesignerInputAppbar/DesignerInputAppbar.vue";
 import DesignerInputFormWizardTab from '@/components/DesignerInputForm/DesignerInputFormWizardTab/DesignerInputFormWizardTab.vue';
 
 
 export default {
     name: "DesignerInputView",
     components: {
-        DesignerInputAppbarStart,
+        DesignerInputAppbar,
         DesignerInputSidebar,
         DesignerInputFormWizardTab,
 
